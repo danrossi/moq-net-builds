@@ -1,0 +1,40 @@
+{
+  "extends": "./node_modules/moq/js/tsconfig.json",
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "jsx": "preserve",
+    //"allowSyntheticDefaultImports": true,
+    "outDir": "dist",
+    "rootDir": "./",
+    "types": ["vite/client"],
+    "paths": {
+      "@moq/video": ["./node_modules/moq/js/video/src/"],
+      "@moq/net": ["./node_modules/moq/js/net/src"],
+      "@moq/net/connection": ["./node_modules/moq/js/net/src/connection"],
+      "@moq/watch": ["./node_modules/moq/js/watch/src"],
+      "@moq/watch/ui": ["./node_modules/moq/js/watch/src/ui/element"],
+      "@moq/watch/ui/element": ["./node_modules/moq/js/watch/src/ui/element"],
+      "@moq/watch/element": ["./node_modules/moq/js/watch/src/element"],
+      "@moq/watch/support/element": [
+        "./node_modules/moq/js/watch/src/support/element"
+      ],
+
+      "@moq/publish": ["./node_modules/moq/js/publish/src"],
+      "@moq/signals": ["./node_modules/moq/js/signals/src/"],
+      "@moq/hang": ["./node_modules/moq/js/hang/src/"],
+      "@moq/hang/catalog": ["./node_modules/moq/js/hang/src/catalog/"],
+      "@moq/hang/container": ["./node_modules/moq/js/hang/src/container/"],
+      "@moq/msf": ["./node_modules/moq/js/msf/src"],
+      "@moq/ui-core": ["./node_modules/moq/js/ui-core/src/"],
+      "@moq/json": ["./node_modules/moq/js/json/src/"],
+
+      "@moq/publish/element": ["./node_modules/moq/js/publish/src/element"],
+      "@moq/publish/ui": ["./node_modules/moq/js/publish/src/ui/element"],
+      "@moq/publish/support/element": [
+        "./node_modules/moq/js/publish/src/support/element"
+      ]
+    }
+  },
+  "include": ["src", "./node_modules/moq/js/common/worklet.d.ts"]
+}

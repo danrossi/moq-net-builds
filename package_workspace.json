@@ -1,0 +1,36 @@
+{
+  "name": "moq",
+  "version": "7.2.7",
+  "type": "module",
+  "scripts": {
+    "build": "LIB_NAME=subscriber vite build && LIB_NAME=publisher vite build",
+    "dev": "LIB_NAME=subscriber vite build --mode dev && LIB_NAME=publisher vite build --mode dev"
+  },
+  "private": true,
+  "author": "Electroteque Media",
+  "license": "SEE LICENCE IN LICENCE.txt",
+  "description": "",
+  "devDependencies": {
+    "@moq/qmux": "^0.3.3",
+    "moq": "git+https://github.com/moq-dev/moq.git",
+    "typescript": "^6.0.3",
+    "vite": "^8.3.4"
+  },
+  "workspaces": [
+    "node_modules/moq/js/net",
+    "node_modules/moq/js/clock",
+    "node_modules/moq/js/pattern",
+    "node_modules/moq/js/auth",
+    "node_modules/moq/js/flate",
+    "node_modules/moq/js/json",
+    "node_modules/moq/js/hang",
+    "node_modules/moq/js/loc",
+    "node_modules/moq/js/msf",
+    "node_modules/moq/js/video",
+    "node_modules/moq/js/watch",
+    "node_modules/moq/js/publish",
+    "node_modules/moq/js/room",
+    "node_modules/moq/js/signals",
+    "node_modules/moq/js/wasm"
+  ]
+}

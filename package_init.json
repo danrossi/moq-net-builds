@@ -1,0 +1,19 @@
+{
+  "name": "moq",
+  "version": "7.2.7",
+  "type": "module",
+  "scripts": {
+    "build": "LIB_NAME=subscriber vite build && LIB_NAME=publisher vite build",
+    "dev": "LIB_NAME=subscriber vite build --mode dev && LIB_NAME=publisher vite build --mode dev"
+  },
+  "private": true,
+  "author": "Electroteque Media",
+  "license": "SEE LICENCE IN LICENCE.txt",
+  "description": "",
+  "devDependencies": {
+    "@moq/qmux": "^0.3.3",
+    "moq": "git+https://github.com/moq-dev/moq.git",
+    "typescript": "^6.0.3",
+    "vite": "^8.3.4"
+  }
+}
