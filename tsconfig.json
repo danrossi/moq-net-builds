@@ -22,6 +22,7 @@
 
       "@moq/publish": ["./node_modules/moq/js/publish/src"],
       "@moq/signals": ["./node_modules/moq/js/signals/src/"],
+      "@moq/clock": ["./node_modules/moq/js/clock/src/"],
       "@moq/hang": ["./node_modules/moq/js/hang/src/"],
       "@moq/hang/catalog": ["./node_modules/moq/js/hang/src/catalog/"],
       "@moq/hang/container": ["./node_modules/moq/js/hang/src/container/"],
