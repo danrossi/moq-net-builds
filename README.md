@@ -6,9 +6,7 @@ For iife builds of the plugin instead of importing as ES/Typescript. The MOQ Net
 
     Note: There is bundling bugs with how the Moq workers are bundled since an update requiring using workspaces for resolving packages. Using aliases causes a bug bundling the workers.
 
-    There is further bugs with Bun requiring including a dummy npm lock file to not break the package install or it removes all the packages into a backup directory.
-
-    Installing the moq git checkout first is needed before copying back the package json with the workspaces config.
+    There is a build change requiring to build the libav package from source as there is no npm release. This requires [Nix](https://nixos.org/download.html) installed first. Nix cannot work with bun installed git packages or submodules so requires a full git checkout first in the setup to build libav.
 
 ## Requirements
 
@@ -16,6 +14,8 @@ bun
 vite
 
 ## Setup
+
+Setup the git checkout and first build libAV package
 
 ```
 ./setup.sh

@@ -1,2 +1,4 @@
 #!/bin/sh
-cp -f package_init.json package.json && bun install && cp -f package_workspace.json package.json && bun install
+git clone https://github.com/moq-dev/moq.git
+bun install && bun run --cwd moq/js/libav build path:.
+source ./update.sh

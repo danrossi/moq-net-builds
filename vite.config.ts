@@ -1,11 +1,11 @@
 import path, { resolve } from 'path';
 import { defineConfig } from 'vite';
 
-import watchpkg from './node_modules/moq/js/watch/package.json' with { type: 'json' };
-import publishpkg from './node_modules/moq/js/publish/package.json' with { type: 'json' };
-import authorpkg from './node_modules/@moq/qmux/package.json' with { type: 'json' };
+import watchpkg from './moq/js/watch/package.json' with { type: 'json' };
+import publishpkg from './moq/js/publish/package.json' with { type: 'json' };
+import authorpkg from './moq/js/qmux/package.json' with { type: 'json' };
 
-import { worklet } from './node_modules/moq/js/common/vite-plugin-worklet';
+import { worklet } from './moq/js/common/vite-plugin-worklet';
 
 import { OutputOptions } from 'rolldown';
 
@@ -64,7 +64,7 @@ if (process.env.FORMATS) {
 }
 
 const packageInfo: PackageJson = {
-  author: authorpkg.author,
+  author: 'Luke Curley <kixelated@gmail.com>',
   license: authorpkg.license,
   description: currentConfig.pkg.description,
   version: currentConfig.pkg.version,
